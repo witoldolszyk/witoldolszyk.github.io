@@ -1,0 +1,238 @@
+body {
+	margin: 0;
+	font-family: 'Chonburi', sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+nav {
+	background: #313234;
+	height: 50px;
+
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	overflow: auto;
+	content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+
+}
+header> nav ul {
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+nav li {
+	display: inline-block;
+}
+header>nav ul>li>a {
+	line-height: 50px;
+	padding: 0 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+header>nav ul>li>a:hover {
+	background: #fff;
+	color: #313234;
+}
+header>nav img {
+	padding: 10px 0;
+}
+.hero {
+	background: url(https://static.pexels.com/photos/97051/pexels-photo-97051.jpeg);
+	width: 100%;
+	height: 70vh;
+	background-size: cover;
+}
+.slogan {
+	background: rgba(47, 89, 69, 0.9);
+	max-width: 700px;
+	float: left;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	transform: translateY(20vh);
+	font-size: 25px;
+}
+.row::before, .row::after {
+content: '';
+display: table;
+clear: both;
+
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+
+
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+.col-offset-12 {margin-left: 100%;}
+
+section>.container {
+	margin: 50px auto;
+	padding-top: 50px;
+}
+i {
+	background: #313234;
+  	border: 0;
+  	border-radius: 10%;
+  	cursor: pointer;
+  	padding: 10px;
+
+}
+.ikony i.fa {
+	color: white;
+	font-size: 58px;
+
+}
+.ikony i.fa:hover {
+	background: #00FF0D;
+	transform: scale(1.10);
+	transition: .5s;
+}
+.ikony> p {
+	padding: 0 10px;
+}
+
+.ikony [class*="col-"]:hover i.fa {
+	background: #00FF0D;
+	transform: scale(1.10);
+	transition: .5s;
+}
+
+.ikony [class*="col-"]:hover h3 {
+	color: #00FF0D;
+	transform: scale(1.10);
+	transition: .5s;
+}
+
+.row img {
+	width: 100%;
+	overflow: auto;
+	content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    height: 45vh;
+    position: relative
+}
+
+
+.icons {
+  position: relative;
+}
+
+.icons img {
+  width: 100%;
+  display: block;
+}
+
+.icons::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .7);
+  opacity: 0;
+  transition: .5s;
+}
+
+.icons .layer{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: .5s;
+}
+
+.icons:hover::before {
+  opacity: 1;
+}
+
+.icons:hover .layer {
+  opacity: 1;
+}
+
+.team img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.suit-background {
+	background: url(http://www.jestrudo.pl/wp-content/uploads/2017/07/jakie-tlo-fotograficzne-wybrac-5.jpg);
+
+}
+
+.text  {
+	font-size: 20px;
+	text-align: justify;
+}
+.numbers {
+	font-family: 'Alfa Slab One';
+	font-size: 22px;
+}
+.numbers p {
+	color: #00FF0D;
+}
+footer {
+	width: 100%;
+	max-width: 1200px;
+	overflow: auto;
+	content: "";
+    clear: both;
+    display: table;
+    text-align: left;
+    margin: 0 auto;
+}
+footer {
+	background: #313332;
+	color: white;
+	font-family: 'Alfa Slab One' serif;
+	padding: 10px;
+}
+footer .fa {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	background: #04c7e7;
+	height: 40px;
+  	width: 40px;
+	padding: 10px;
+	text-align: center;
+	padding: 10px;
+}
