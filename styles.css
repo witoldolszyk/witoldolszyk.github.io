@@ -35,6 +35,7 @@ header>nav ul>li>a {
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
+
 }
 header>nav ul>li>a:hover {
 	background: #fff;
@@ -235,4 +236,8 @@ footer .fa {
 	padding: 10px;
 	text-align: center;
 	padding: 10px;
+}
+.height {
+	height: 100px;
+	width: 100%;
 }
